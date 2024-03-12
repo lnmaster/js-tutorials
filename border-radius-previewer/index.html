@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+<!--    The block below we're going to style and apply the property to it-->
+    <div id="box"></div> 
+    <div class="input-container">
+        <div>
+            <label for="top-left">Top Left:</label>
+            <input type="number" id="top-left" class="radius-input" value="0" min="0">
+        </div>
+        <div>
+            <label for="top-right">Top Right:</label>
+            <input type="number" id="top-right" class="radius-input" value="0" min="0">
+        </div>
+        <div>
+            <label for="bottom-left">Bottom Left:</label>
+            <input type="number" id="bottom-left" class="radius-input" value="0" min="0">
+        </div>
+        <div>
+            <label for="bottom-right">Bottom Right:</label>
+            <input type="number" id="bottom-right" class="radius-input" value="0" min="0">
+        </div>
+    </div>
+    <div>
+        <button id="copy-css">Copy CSS</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

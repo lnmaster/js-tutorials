@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#box {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px auto;
+    border: 2px solid #333;
+    transition: all 0.3s ease;
+    border-radius: 0;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 8px;
+    margin: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    margin: 20px auto;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-container + div {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+    #box {
+        width: 150px;
+        height: 150px;
+    }
+    input[type="number"] {
+        width: 40px;
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    .input-container > div {
+        text-align: right;
+    }
+    label {
+        font-size: 100%;
+    }
+}
