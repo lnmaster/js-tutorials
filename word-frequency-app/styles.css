@@ -1,0 +1,28 @@
+body {
+    background-color: #f8f9fa; /* Light gray background color */
+}
+
+/* Adjusting textarea size */
+textarea {
+    min-height: 200px;
+}
+
+/* Providing fixed height to the table with a scroll */
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.chart-container {
+    min-height: 400px;
+    width: 100%;
+}
+
+#error {
+    padding: 8px;
+    display: none;
+}
+
+#chartView {
+    display: none;
+}

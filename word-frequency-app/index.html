@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Frequency App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="mt-4">Word Frequency App</h1>
+    <div class="form-group mt-4">
+        <label for="urlInput">Enter URL:</label>
+        <input type="url" id="urlInput" class="form-control" placeholder="Enter URL of the web page">
+    </div>
+    <button id="analyzeBtn" class="btn btn-success mt-2">Analyze</button>
+    <hr>
+    <textarea id="textInput" class="form-control mt-4" rows="10" maxlength="2048" placeholder="Enter text here (max 2048 characters)"></textarea>
+    <button id="translateBtn" class="btn btn-primary mt-2">Translate</button>
+    <div id="error" class="alert alert-danger mt-2" role="alert"></div>
+    <div class="view-toggle mt-4">
+        <button id="tableViewBtn" class="btn btn-secondary mr-2 active">Table View</button>
+        <button id="chartViewBtn" class="btn btn-secondary">Chart View</button>
+    </div>
+    <div id="tableView" class="mt-4">
+        <div class="table-container">
+            <table id="wordFrequencyTable" class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Frequency</th>
+                </tr>
+                </thead>
+                <tbody id="wordFrequencyBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="chartView" class="mt-4">
+        <div class="chart-container">
+            <canvas id="wordFrequencyChart"></canvas>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
